@@ -1,4 +1,4 @@
-[ PC ]
+[[ PC ]
 HP Pavillion dv6700
 [ Kernel ]
 Linux hagbard 4.19.27-gentoo-r1-hagbard  GNU/Linux
@@ -18,18 +18,24 @@ i686 Intel(R) Core(TM)2 Duo CPU T5550 @ 1.83GHz GenuineIntel
 > pcmanfm
 [[ browser ]]
 > firefox
-[[ mail ]]
- mutt
+ tor
 [[ music ]]
 > moc (mocp)
 [[ video ]]
  vlc
 [[ sys  monitor ]]
- conky
+> nmon
 [[ graphics ]]
 >> inkscape
 [[ pdf reader ]]
-> zathura
+> mupdf
 [[ image viewer ]]
 > feh
-
+[[ pswd mngr ]]
+ keepass
+[[ utils ]]
+> gentoolkit (equery, ...)
+>> ccache
+[[ scan ]]
+>> nmap
+>> wireshark

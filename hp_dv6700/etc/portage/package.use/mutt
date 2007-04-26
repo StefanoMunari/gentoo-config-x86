@@ -1,1 +1,0 @@
-mail-client/mutt -berkdb -gdbm -qdbm -tokyocabinet -pop -smime -smime_classic lmdb smtp hcache notmuch ssl gpgme

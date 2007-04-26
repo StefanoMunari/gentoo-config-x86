@@ -1,0 +1,35 @@
+#!/bin/bash
+
+USR=$(cat /etc/user_default);
+DST_HEAD="/home/$USR/git/gentoo-config-x86/hp_dv6700";
+DST_PREFIX="";
+DST="";
+SYNC_FILE="/etc/sync.list";
+RS_FLAGS="-acRlpEogt --progress --verbose";
+RS_TEST="--dry-run";
+R="";
+for src in $(cat $SYNC_FILE); do
+	if [ "$src" = "-r" ]; then
+		R="$src";
+	else
+		DST=$DST_HEAD;
+		if [[ $src == *"/USER/"*  ]]; then
+			src=$(echo "$src" | tr USER "$USR");
+			mkdir -p $DST/home/USER;
+		fi;
+		echo "------SYNC------";
+		echo "$src --> $DST";
+		rsync $RS_FLAGS $src $DST;
+		# generic usr dir
+		if [[ $src == *"/$USR/"*  ]]; then
+			prev_dir=$PWD;
+			cd $DST_HEAD/home/$USR;
+			for f in $(ls -a -I '.' -I '..'); do
+				rsync -av $f $DST_HEAD/home/USER;
+			done;
+			cd $prev_dir;
+		fi;
+		R="";
+	fi;
+done;
+rm -rf $DST_HEAD/home/$USR;

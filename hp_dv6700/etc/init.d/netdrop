@@ -1,0 +1,24 @@
+#!/sbin/openrc-run
+# Copyright 2019 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="netdrop daemon"
+description="Drop/disable wifi configurations and drivers"
+command=/sbin/wifi_drop
+command_background=false
+pidfile=""
+
+depend() {
+	after local modules elogind wpa_supplicant busybox-ntpd udev
+}
+
+start()
+{
+	./$command;
+	return 0;
+}
+
+stop()
+{
+	return 0;
+}

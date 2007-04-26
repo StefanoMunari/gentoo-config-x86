@@ -1,1 +1,0 @@
-app-admin/conky -cmus -mpd -xmms2 -curl -nano-syntax -lua-cairo -lua-imlib -lua-rsvg -ical -thinkpad -eve -weather-metar -webserver -irc -portmon -libressl openssl  apcupsd moc iostats imlib nvidia math vim-syntax

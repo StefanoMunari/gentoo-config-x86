@@ -12,8 +12,17 @@ if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
 	return
 fi
+clr_purple='\e[1;35m';
+clr_cyan='\e[1;36m';
+clr_white='\e[1;37m';
+clr_green='\e[1;32m';
+clr_yellow='\e[1;33m';
+clr_reset='\e[0m';
+export PS1="\[$clr_purple\][$(power)]\[$clr_cyan\]\D{%I.%M.%S}\[$clr_yellow\]|\u@\h|\[$clr_white\]\w\[$clr_yellow\]|\$|\[$clr_reset\]";
 # Aliases
 alias la='ls -la'
+alias lar='ls -laR'
 alias h='history'
 alias ports='netstat -tulpna'
 alias psgrep='ps -aux | grep'
+alias firefox='firefox --private-window'

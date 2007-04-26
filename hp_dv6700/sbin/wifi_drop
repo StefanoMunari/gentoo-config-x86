@@ -1,0 +1,12 @@
+#!/bin/bash
+
+lsmod | grep wl;
+if [ "$?" == 0 ]; then
+	rmmod wl;
+fi;
+wpa_state=$(rc-service wpa_supplicant status |grep status |rev |cut -d' ' -f1 |rev);
+if [ "$wpa_state" == "started" ]; then 
+	rc-service wpa_supplicant stop;
+fi;
+exit 0;
+

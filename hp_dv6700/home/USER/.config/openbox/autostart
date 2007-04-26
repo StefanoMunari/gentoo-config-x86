@@ -5,5 +5,7 @@
 #
 # switch btwn IT and EN layout with ALT+SHIFT
 setxkbmap -layout it
+# set background
+feh --bg-fill /home/$USER/pics/gentoo_bg.png &
 # start eterm as default
 eterm &

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CONFIG="cm"
+PARAMS="-s5"
+echo $CONFIG | nmon $PARAMS
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for i in $(equery --quiet l '*'); do equery u $i; done;

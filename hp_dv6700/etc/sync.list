@@ -1,0 +1,30 @@
+/etc/default/grub
+/etc/fstab
+/etc/sysctl.conf
+/etc/resolv.conf.head
+-r /etc/modules-load.d
+/etc/portage/make.conf
+/etc/portage/package.accept_keywords
+/etc/portage/package.keywords
+/etc/portage/package.mask
+-r /etc/portage/package.unmask
+-r /etc/portage/package.use
+-r /etc/portage/repo.postsync.d
+-r /etc/portage/repos.conf
+-r /etc/portage/savedconfig
+/proc/config.gz
+/boot/grub/background.png
+/home/USER/.bashrc
+/home/USER/.vimrc
+-r /home/USER/.config/openbox
+/home/USER/.config/wireshark/preferences
+-r /home/USER/.config/libfm
+-r /home/USER/.config/pcmanfm
+/home/USER/.xinitrc
+/usr/bin/get_use_flags
+/usr/bin/power
+/usr/bin/sysmon
+/sbin/wifi_*
+/sbin/sync_hagbard
+/etc/init.d/netdrop
+/etc/sync.list

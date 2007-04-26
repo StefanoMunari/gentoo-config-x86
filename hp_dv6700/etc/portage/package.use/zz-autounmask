@@ -4,9 +4,6 @@
 # required by www-client/firefox-60.6.1::gentoo[system-sqlite]
 # required by www-client/firefox (argument)
 >=dev-db/sqlite-3.25.3 secure-delete
-# required by app-admin/conky-1.10.8-r4::gentoo[nvidia,X]
-# required by app-admin/conky (argument)
->=x11-drivers/nvidia-drivers-390.116-r2 static-libs
 # required by sys-power/apcupsd-3.14.14-r2::gentoo
 # required by app-admin/conky-1.10.8-r4::gentoo[apcupsd]
 # required by app-admin/conky (argument)

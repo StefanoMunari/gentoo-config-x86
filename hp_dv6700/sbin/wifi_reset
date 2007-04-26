@@ -1,0 +1,34 @@
+#!/bin/bash
+
+lsmod |grep wl;
+if [ "$?" == 1 ]; then
+	modprobe wl;
+fi;
+index=0;
+for i in $(ls /etc/wpa_supplicant/*.conf); do
+	case "$i" in
+		*wpa_supplicant.conf*)
+			continue;
+		;;
+	esac;
+	echo $index") $i";
+	index=$((index + 1));
+done;
+read -n1 -p "choose ?) config:" config
+echo "";
+index=0;
+for i in $(ls /etc/wpa_supplicant/*.conf); do
+	case "$i" in
+		*wpa_supplicant.conf*)
+			continue;
+		;;
+	esac;
+	if [ "$index" == "$config" ]; then
+		rc-service wpa_supplicant stop;
+		cp $i /etc/wpa_supplicant/wpa_supplicant.conf;
+		rc-service wpa_supplicant restart;
+		break;
+	fi;
+	index=$((index + 1));
+done;
+exit 0;

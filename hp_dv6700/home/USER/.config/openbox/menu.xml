@@ -34,7 +34,7 @@
 <menu id="apps-editors-menu" label="Editors">
   <item label="Vim">
     <action name="Execute">
-      <command>vimgui</command>
+      <command>eterm --exec vim</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Vim</wmclass>
@@ -81,10 +81,28 @@
 <menu id="apps-net-menu" label="Network">
   <item label="Firefox">
     <action name="Execute">
-      <command>firefox</command>
+      <command>firefox --private-window</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Wireshark">
+    <action name="Execute">
+      <command>wireshark</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Wireshark</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+   <item label="Nmap">
+    <action name="Execute">
+      <command>eterm --exec man nmap</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Nmap</wmclass>
       </startupnotify>
     </action>
   </item>
@@ -251,9 +269,17 @@
 </menu>
 -->
 <menu id="apps-graphics-menu" label="Graphics">
-   <item label="Evince">
+   <item label="PDF-Reader">
     <action name="Execute">
-      <command>evince</command>
+      <command>zathura</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Image-Reader">
+    <action name="Execute">
+      <command>eterm --exec man feh</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -262,14 +288,6 @@
   <item label="Inkscape">
     <action name="Execute">
       <command>inkscape</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="Feh">
-    <action name="Execute">
-      <command>fehgui</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
