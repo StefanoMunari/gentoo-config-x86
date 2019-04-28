@@ -1,0 +1,1 @@
+dev-db/mariadb -bindist -tcmalloc -extraengine -latin1 -numa -galera -client-libs -innodb-lzo -innodb-snappy -sst-mariabackup -sst-rsync -test -tokudb -rocksdb -libressl backup sphinx pam innodb-lz4 server openssl

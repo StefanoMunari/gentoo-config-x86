@@ -1,0 +1,3 @@
+# package.unmask# required by ~dev-qt/qtcore-5.11.3 (argument)
+# /etc/portage/package.mask:
+=dev-qt/qtcore-5.11.3-r2

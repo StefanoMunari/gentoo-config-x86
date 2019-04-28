@@ -1,0 +1,35 @@
+[ PC ]
+HP Pavillion dv6700
+[ Kernel ]
+Linux hagbard 4.19.27-gentoo-r1-hagbard  GNU/Linux
+i686 Intel(R) Core(TM)2 Duo CPU T5550 @ 1.83GHz GenuineIntel
+[ Application ]
+[[ window srv ]]
+>> X
+[[ wm ]]
+>> openbox
+[[ dm ]]
+> xdm
+[[ login manager ]]
+>> slim
+[[ editor ]]
+>> vim
+[[ file manager ]]
+> pcmanfm
+[[ browser ]]
+> firefox
+[[ mail ]]
+ mutt
+[[ music ]]
+> moc (mocp)
+[[ video ]]
+ vlc
+[[ sys  monitor ]]
+ conky
+[[ graphics ]]
+>> inkscape
+[[ pdf reader ]]
+> zathura
+[[ image viewer ]]
+> feh
+

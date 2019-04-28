@@ -1,0 +1,1 @@
+net-libs/courier-authlib -ldap -mysql -static-libs sqlite

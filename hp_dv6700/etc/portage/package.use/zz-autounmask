@@ -1,0 +1,20 @@
+# package.use# required by sys-kernel/genkernel-3.5.3.3::gentoo
+# required by sys-kernel/genkernel (argument)
+>=sys-apps/util-linux-2.32-r4 static-libs
+# required by www-client/firefox-60.6.1::gentoo[system-sqlite]
+# required by www-client/firefox (argument)
+>=dev-db/sqlite-3.25.3 secure-delete
+# required by app-admin/conky-1.10.8-r4::gentoo[nvidia,X]
+# required by app-admin/conky (argument)
+>=x11-drivers/nvidia-drivers-390.116-r2 static-libs
+# required by sys-power/apcupsd-3.14.14-r2::gentoo
+# required by app-admin/conky-1.10.8-r4::gentoo[apcupsd]
+# required by app-admin/conky (argument)
+>=sys-apps/util-linux-2.33-r1 tty-helpers
+# required by media-gfx/inkscape-0.92.3-r1::gentoo[latex]
+# required by media-gfx/inkscape (argument)
+>=media-gfx/pstoedit-3.70-r1 plotutils
+# required by net-mail/notmuch-0.24.2::gentoo[crypt]
+# required by mail-client/mutt-1.10.1::gentoo[notmuch]
+# required by mail-client/mutt (argument)
+>=dev-libs/gmime-2.6.23:2.6 smime

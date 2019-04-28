@@ -1,0 +1,1 @@
+x11-base/xorg-server dmx elogind glamor kdrive xcsecurity xorg xvfb -xcsecurity -xnest -xephyr -suid

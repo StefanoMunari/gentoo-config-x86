@@ -1,0 +1,1 @@
+dev-libs/cyrus-sasl -berkdb -gdbm -mysql -openldap -urandom sqlite pam ssl sample srp authdaemond

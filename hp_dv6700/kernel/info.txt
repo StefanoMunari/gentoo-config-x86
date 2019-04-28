@@ -1,0 +1,18 @@
+[ Extra FW ]
+[[ net::wireless ]]
+// emerge the following FW modules
+// after kernel + initramfs
+// installation
+net-wireless/broadcom-sta
+// symlink kernel module
+ln -nsf /lib/modules/$(uname -r)/wl.ko /lib/modules/$(uname
+-r)/net/wireless/wl.ko
+// update module deps
+depmod -a
+// insert module
+modprobe wl
+// check /etc/modules-load.d/
+// if it does not contain wl module:
+// add to default loaded modules
+echo "wl" >> /etc/modules-load.d/network.conf
+

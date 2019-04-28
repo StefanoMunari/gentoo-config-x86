@@ -1,0 +1,8 @@
+# required by b43-firmware (argument)
+=sys-firmware/b43-firmware-5.100.138 ~x86
+# required by b43legacy-firmware (argument)
+=sys-firmware/b43legacy-firmware-3.130.20.0 ~x86
+# required by broadcom-sta (argument)
+=net-wireless/broadcom-sta-6.30.223.271-r4 ~x86
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-qt/qtcore-5.12.2 ~x86
