@@ -265,6 +265,11 @@
 		  <command>eterm --exec vim</command>
 	</action>
   </keybind>
+  <keybind key="W-k">
+	<action name="Execute">
+		  <command>keepass</command>
+	</action>
+  </keybind>
 <!-- UNUSED BINDINGS -->
 <!--
   <keybind key="S-A-Up">
